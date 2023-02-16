@@ -1,8 +1,12 @@
-#include <stdio.h>
+#include <stdio.>
 
-/*
- * Trying to print somthing
- */
+/**
+ * main - Entry point
+ *
+ * Description: A C program that prints with put function
+ *
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
