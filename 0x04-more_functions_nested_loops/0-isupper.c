@@ -7,11 +7,11 @@
 */
 
 int _isupper(int c){
-	if(c>="C"){
-		return 1;
+	if(c>="C")
+		return (1);
 	{
 	else{
-		return 0;
+		return (0);
 	}
 }
 
