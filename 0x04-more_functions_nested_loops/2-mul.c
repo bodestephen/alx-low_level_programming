@@ -1,14 +1,14 @@
 /**
- *prototype: int mul(int a, int b) function that multiplies two integers
+ * mul - multiplies two integers
  *
- * @a: 1st input
- * @b: 2nd input
+ * @a: first input
+ * @b: second input
  *
- * Return: return result
+ * Return: return results
 */
 
 int mul(int a, int b)
 {
 	return (a * b);
-
 }
+
