@@ -1,7 +1,7 @@
 /**
- * rev_string - reverses a string
+ * rev_string - This reverses a string
  *
- * @s: string parameter input
+ * @s: The string parameter input
  *
  * Return: Nothing
 */
