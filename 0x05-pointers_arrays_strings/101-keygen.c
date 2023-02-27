@@ -6,8 +6,9 @@
 
 int main(void) {
     srand(time(NULL)); /* Seed the random number generator with the current time */
-    char password[PASSWORD_LENGTH + 1]; /* Allocate space for the password string */
+    
     int i;
+    char password[PASSWORD_LENGTH + 1]; /* Allocate space for the password string */
 
     for (i = 0; i < PASSWORD_LENGTH; i++) {
         int rand_num = rand() % 62; /* Generate a random number between 0 and 61 */
