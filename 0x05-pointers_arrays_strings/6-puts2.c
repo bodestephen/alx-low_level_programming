@@ -1,9 +1,9 @@
 #include"main.h"
 
 /**
- * puts2 - prints every character of a string
+ * puts2 - This prints every character of a string
  *
- * @str: string parameter input
+ * @str: The string parameter input
  *
  * Return: Noting
 */
