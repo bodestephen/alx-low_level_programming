@@ -7,7 +7,7 @@
 int main(void) {
     srand(time(NULL)); /* Seed the random number generator with the current time */
     
-    int i;
+    int i; /* Declare i before password to avoid mixed declarations and code */
     char password[PASSWORD_LENGTH + 1]; /* Allocate space for the password string */
 
     for (i = 0; i < PASSWORD_LENGTH; i++) {
