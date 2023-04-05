@@ -1,5 +1,3 @@
-/* This code was written by Bode Stephen */
-
 #include "lists.h"
 
 /**
@@ -7,7 +5,7 @@
  * @head: A pointer to a pointer to the head of the linked list.
  * @idx: The index where the new node should be added. Index starts at 0.
  * @n: The data to be stored in the new node.
- *
+ * This code was written by Bode Stephen
  * Return: The address of the new node, or NULL if it failed.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
