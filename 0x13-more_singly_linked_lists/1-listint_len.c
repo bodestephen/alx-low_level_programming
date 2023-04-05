@@ -1,18 +1,17 @@
 #include "lists.h"
 
 /**
- * listint_len - count the elements in the list
- * @h: start point of the list
- * Return: number of the elements
+ * Counts the number of elements in the given list.
+ *
+ * @param h A pointer to the start of the list.
+ * @return The number of elements in the list.
  */
-size_t listint_len(const listint_t *h)
-{
-	unsigned int i = 0;
-
-	while (h != NULL)
-	{
-		i++;
-		h = h->next;
-	}
-	return (i);
+size_t listint_len(const listint_t *h) {
+    size_t count = 0;
+    while (h) {
+        count++;
+        h = h->next;
+    }
+    return count;
 }
+
