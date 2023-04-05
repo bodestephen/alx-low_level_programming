@@ -1,8 +1,6 @@
 #include "lists.h"
-
 /**
- * Counts the number of elements in the given list.
- *
+ * Counts the number of elements in the given list
  * @param h A pointer to the start of the list.
  * @return The number of elements in the list.
  */
