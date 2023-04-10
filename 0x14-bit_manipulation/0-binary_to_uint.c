@@ -3,8 +3,8 @@
 /**
  * binary_to_uint - Convert a binary number to an unsigned int
  * @b: String of 0's and 1's
+ *
  * Return: Decimal representation of the binary number
- * 
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -26,4 +26,3 @@ unsigned int binary_to_uint(const char *b)
 
         return (dec);
 }
-
