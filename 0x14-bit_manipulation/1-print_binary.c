@@ -10,8 +10,8 @@
  *
  * Return: void
  *
- * Author: [Your Name]
- *        [Your Email]
+ * Author: bode stephen
+ *        hello@olabodestephen.com
  */
 void print_binary(unsigned long int n)
 {
