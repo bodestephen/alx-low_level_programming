@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * binary_to_uint - Converts a binary string to an unsigned integer
  * @b: String of 0's and 1's to be converted
@@ -11,8 +10,8 @@
  * Return: Unsigned integer representation of the binary string, or 0 if an
  * error occurred.
  *
- * Author: [Your Name]
- *         [Your Email]
+ * Author: 'bode Stephen
+ * 
  */
 unsigned int binary_to_uint(const char *b)
 {
@@ -34,4 +33,3 @@ unsigned int binary_to_uint(const char *b)
 
         return (dec);
 }
-
