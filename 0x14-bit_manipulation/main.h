@@ -3,9 +3,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-/* Main.h file for the task Bit manipulation
- * by 'Bode stephen 
-*/
 
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
