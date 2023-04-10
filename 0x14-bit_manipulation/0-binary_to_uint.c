@@ -3,10 +3,7 @@
  * binary_to_uint - Converts a binary string to an unsigned integer
  * @b: String of 0's and 1's to be converted
  *
- * This function converts a binary string to an unsigned integer. The binary
- * string should consist only of '0' and '1' characters. If the string contains
- * any other characters, the function returns 0.
- *
+ * This function converts a binary string to an unsigned integer.
  * Return: Unsigned integer representation of the binary string, or 0 if an
  * error occurred.
  *
@@ -33,3 +30,4 @@ unsigned int binary_to_uint(const char *b)
 
         return (dec);
 }
+
