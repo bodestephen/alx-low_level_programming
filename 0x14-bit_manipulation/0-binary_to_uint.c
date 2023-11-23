@@ -37,4 +37,3 @@ unsigned int binaryStringToUInt(const char *b)
 
     return result;
 }
-
