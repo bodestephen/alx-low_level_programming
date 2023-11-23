@@ -1,39 +1,78 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * binaryStringToUInt - converts a binary string to an unsigned int
+ * _atoi - converts chars to integer
+ *
+ * @c: char to convert
+ *
+ * Return: converted integer
+*/
+unsigned int _atoi(char c)
+{
+	return ((unsigned int) c - '0');
+}
+
+/**
+ * _strlen - gets the length of a string
+ *
+ * @str: string input
+ *
+ * Return: string length
+*/
+unsigned int _strlen(const char *str)
+{
+	unsigned int index = 0;
+
+	while (str[index] != '\0')
+		index++;
+	return (index);
+}
+
+/**
+ * binary_to_uint - a function that converts a binary number
+ *                  to an unsigned int
  *
  * @b: string that contains 0 and 1 characters
  *
- * Return: the number converted or 0 if @b contains
- *         a character that is not 0 or 1, or when @b is null
- */
-unsigned int binaryStringToUInt(const char *b)
+ * Return: the number converted or 0
+ *         if @b contains a character
+ *         that is not 0 or 1 or when
+ *         @b is null
+*/
+unsigned int binary_to_uint(const char *b)
 {
-    int index;
-    unsigned int result = 0, base2 = 1, num = 0;
+	int index;
+	unsigned int result = 0, base2 = 1,  num = 0;
 
-    /* Error handling: if b is NULL, return 0 */
-    if (b == NULL)
-    {
-        fprintf(stderr, "Error: Input string is NULL.\n");
-        return 0;
-    }
+	/*if b is NULL return 0*/
+	if (b == NULL)
+		return (0);
 
-    /* Iterate through the string */
-    for (index = 0; b[index] != '\0'; index++)
-    {
-        num = _atoi(b[index]); /* Convert char to number */
+	#ifdef DEBUG /*print debug statement*/
+	printf("String is %s, and length is %u.\n", b, _strlen(b));
+	#endif
 
-        /* Error handling: if the character is not 0 or 1, return 0 */
-        if (num != 0 && num != 1)
-        {
-            fprintf(stderr, "Error: Invalid character '%c' at index %d.\n", b[index], index);
-            return 0;
-        }
+	/*iterate through string*/
+	for (index = _strlen(b) - 1; index >= 0; index--)
+	{
+		num = _atoi(b[index]); /*convert char to number*/
 
-        result = (result << 1) | num; /* Shift left and add num */
-    }
+		#ifdef DEBUG /*print debug statements*/
+		printf("Number is %u, index is %i and base is %u.\n\n", num, index, base2);
+		#endif
 
-    return result;
+		/*if number is not 0 or 1 return 0*/
+		if (num != 0 && num != 1)
+			return (0);
+
+		result += num * base2; /*enable debug to see it in action*/
+		base2 *= 2;
+
+		#ifdef DEBUG /*print debug statements*/
+		printf("Result is %u.\n", result);
+		#endif
+	}
+
+	return (result);
+
 }
